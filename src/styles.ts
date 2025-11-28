@@ -20,6 +20,7 @@ const EstiloGlobal = createGlobalStyle `
         padding-top: 80px;
         font-family: Arial, Helvetica, sans-serif;
         background-color: #f0f0f0;
+        padding-bottom: 80px;
         
 
         @media (max-width: 768px) {
@@ -44,10 +45,5 @@ const Container = styled.div `
         display: block;
     }
 
-
-    img {
-        max-width: 100%;
-
-    }
 `
 export { Container }

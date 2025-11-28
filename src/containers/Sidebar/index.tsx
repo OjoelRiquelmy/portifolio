@@ -1,10 +1,21 @@
+
+import Avatar from "../../components/Avatar"
+import Paragrafo from "../../components/Paragrafo"
 import Title from "../../components/Title"
+
+import { Description, Button, SidebarContainer } from "./styles"
 
 const Sidebar = () => (
 <aside>
-    <img src="https://github.com/joelriquelmy.png" alt="A man in business attire with a dark blazer and pink tie, smiling at the camera in an outdoor setting with other people and buildings in the background. Professional and welcoming demeanor." />
-    <Title fontSize={20}>Joel Riquelmy</Title>
-    <p>Desenvolvedor Full Stack</p>
+    <SidebarContainer>
+        <Avatar />
+        <Title fontSize={20}>Joel Riquelmy</Title>
+        <Paragrafo tipo="secundario" fontSize={16}>joelriquelmy</Paragrafo>
+        <Description tipo="principal" fontSize={12}>Desenvolvedor Front-end</Description>
+        <Button>Trocar tema</Button>
+    </SidebarContainer>
+        
+    
 </aside>
 )
 
