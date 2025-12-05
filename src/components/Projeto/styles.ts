@@ -1,23 +1,22 @@
 import styled from "styled-components";
 
 export const Card = styled.div`
-    border: 1px solid #c1c1c1;
+    border: 2px solid ${(props) => props.theme.borderColor ?? '#c1c1c1'};
     border-radius: 8px;
     padding: 16px;
-    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
 `;
 
 export const LinkBotao = styled.a`
     display: inline-block;
-    color: #ffffff;
+    color: ${(props) => props.theme.background};
     font-size: 14px;
-    background-color: #447;
+    background-color: ${(props) => props.theme.backgroundButton};
     text-decoration: none;
     padding: 8px;
     border-radius: 5px;
     margin-top: 24px;
 
     &:hover {
-        background-color: #335;
+        opacity: 0.8;
     }
 `;

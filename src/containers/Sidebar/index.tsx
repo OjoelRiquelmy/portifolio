@@ -5,14 +5,18 @@ import Title from "../../components/Title"
 
 import { Description, Button, SidebarContainer } from "./styles"
 
-const Sidebar = () => (
+type Props = {
+    toggleTheme: () => void;
+}
+
+const Sidebar = ({ toggleTheme }: Props) => (
 <aside>
     <SidebarContainer>
         <Avatar />
         <Title fontSize={20}>Joel Riquelmy</Title>
         <Paragrafo tipo="secundario" fontSize={16}>joelriquelmy</Paragrafo>
         <Description tipo="principal" fontSize={12}>Desenvolvedor Front-end</Description>
-        <Button>Trocar tema</Button>
+        <Button onClick={toggleTheme}>Trocar tema</Button>
     </SidebarContainer>
         
     

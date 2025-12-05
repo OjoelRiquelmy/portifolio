@@ -1,4 +1,6 @@
-import styled, { createGlobalStyle } from 'styled-components'
+import styled, { createGlobalStyle, type DefaultTheme } from 'styled-components'
+
+import type { Theme } from './themes/dark';
 
 const EstiloGlobal = createGlobalStyle `
         *{
@@ -19,7 +21,7 @@ const EstiloGlobal = createGlobalStyle `
     body {
         padding-top: 80px;
         font-family: Arial, Helvetica, sans-serif;
-        background-color: #f0f0f0;
+        background-color: ${props => (props.theme as Theme).background};
         padding-bottom: 80px;
         
 
